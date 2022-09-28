@@ -1,0 +1,27 @@
+package arrays;
+
+import java.util.Scanner;
+
+public class User {
+
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		String Email[] = new String[20];
+		String Username[] = new String[20];
+		String Password[] = new String[20];
+		
+		System.out.print("Enter Email : ");
+		Email[0] = s.nextLine();
+		
+		System.out.print("Enter Username : ");
+		Username[0] = s.nextLine();
+		
+		System.out.print("Enter Password : ");
+		Password[0] = s.nextLine();
+		
+			
+
+	}
+
+}
