@@ -1,0 +1,26 @@
+using System;
+using System.IO;
+public class aljon
+{
+    public static void Main()
+    {
+        double Filipino,English,Math,Science;
+        
+        Console.Write("Filipino: ");
+        Filipino = Convert.ToDouble(Console.ReadLine());
+        
+        Console.Write("English: ");
+        English = Convert.ToDouble(Console.ReadLine());
+        
+        Console.Write("Math: ");
+        Math = Convert.ToDouble(Console.ReadLine());
+        
+        Console.Write("Science: ");
+        Science = Convert.ToDouble(Console.ReadLine());
+        
+        // this will show the average of the given grades
+        double result = (Filipino + English + Math + Science) / 4;
+        Console.WriteLine("Average of {0}, {1}, {2}, {3} is: {4} ",
+        Filipino, English, Math, Science, result);
+    }
+}
