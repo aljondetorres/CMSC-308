@@ -1,0 +1,50 @@
+package main;
+
+import calculator.Calculator;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//Operation
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter Operation(+, -, *, /): ");
+		char operator = scan.next().charAt(0);
+		
+		System.out.print("Enter first number: ");
+		int num1 = scan.nextInt();
+		
+		System.out.print("Enter second number: ");
+		int num2 = scan.nextInt();
+		
+		int result = 0;
+		
+		switch (operator) {
+		
+		case '+' : {
+			result = calculator.Calculator.add(num1, num2);
+			break;
+		}
+		case '-' : {
+			result = calculator.Calculator.Subtract(num1, num2);
+			break;
+		}
+		case '*' : {
+			result = calculator.Calculator.Multiply(num1, num2);
+			break;
+		}
+		case '/' : {
+			result = calculator.Calculator.Divide(num1, num2);
+			break;
+		}
+		default:{
+			System.out.print("Invalid.");
+		}
+		
+		}
+		System.out.print("Result: " + " " + num1 + " " + operator + " " + num2 + " = " + result);
+	}
+
+}
