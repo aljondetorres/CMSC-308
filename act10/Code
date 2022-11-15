@@ -1,0 +1,41 @@
+using System.IO;
+using System;
+using System.Collections;
+
+public class GFG
+{
+    static public void Main()
+    {
+        string element1, element2, element3, element4, element5;
+        
+        Console.WriteLine("Enter 1st element: ");
+        element1 = Console.ReadLine();
+        Console.WriteLine("Enter 2nd element: ");
+        element2 = Console.ReadLine();
+        Console.WriteLine("Enter 3rd element: ");
+        element3 = Console.ReadLine();
+        Console.WriteLine("Enter 4th element: ");
+        element4 = Console.ReadLine();
+        Console.WriteLine("Enter 5th element: ");
+        element5 = Console.ReadLine();
+
+    
+        Queue my_queue = new Queue();
+
+        my_queue.Enqueue(element1);
+        my_queue.Enqueue(element2);
+        my_queue.Enqueue(element3);
+        my_queue.Enqueue(element4);
+        my_queue.Enqueue(element5);
+        
+        
+        Console.WriteLine("Your Elements");
+        Console.WriteLine(element1);
+        Console.WriteLine(element2);
+        Console.WriteLine(element3);
+        Console.WriteLine(element4);
+        Console.WriteLine(element5);
+       
+       
+    }
+}
