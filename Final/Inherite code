@@ -1,0 +1,17 @@
+package inheritance;
+
+public class Species extends Classification{
+	
+	String species;
+	
+	Species(String animal, String Class, String order, String family, String genus, String species){
+		super(animal, Class, order, family, genus);
+		this.species = species;
+		
+	}
+		void checkStatus() {
+			super.checkStatus();
+			System.out.println("Species : " + species);
+			
+		}
+}
