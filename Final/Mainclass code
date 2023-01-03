@@ -1,0 +1,14 @@
+package inheritance;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		Classification c = new Classification ("Iguana","Reptile","Squamata","Iguanadae","Cyclura");
+		Species s = new Species("Orang-utan", "Mammal", "Primates","Great Apes","Pongo","Pongo Pygmaeus");
+		
+		c.checkStatus();
+		s.checkStatus();
+	}
+
+}
