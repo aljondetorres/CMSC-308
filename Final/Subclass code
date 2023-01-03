@@ -1,0 +1,25 @@
+package inheritance;
+
+public class Classification {
+
+	String animal, Class, order, family, genus;
+	
+	Classification(String animal, String Class, String order, String family, String genus){
+		this.animal = animal;
+		this.Class = Class;
+		this.order = order;
+		this.family = family;
+		this.genus = genus;
+	}
+	
+	 void checkStatus() {
+		 System.out.println("Animal Classification");
+		 System.out.println("Animal : " + animal);
+		 System.out.println("Class : " + Class);
+		 System.out.println("Order : " + order);
+		 System.out.println("Family : " + family);
+		 System.out.println("Genus : " + genus);
+		 
+	 }
+	
+}
